@@ -47,16 +47,16 @@ tools:context=".MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="476dp" />
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="550dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="344dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Limpar Valores"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="536dp" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="550dp" />
 
     <TextView
         android:id="@+id/textView4"

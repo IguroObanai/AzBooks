@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextEmail3"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite o seu Senha"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/confirmarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Senha"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <TextView
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefone2"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Confirme a sua senha"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefone"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite o seu Telefone"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite o seu email"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="156dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#192c46"
+        android:text="Criar Conta"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#192c46"
+        android:textColorHint="#192c46"
+        android:textColorLink="#192c46"
+        android:textSize="22sp"
+        app:cornerRadius="50px"
+        app:rippleColor="#192C46"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/criarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Criar Conta"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite o seu nome"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
