@@ -1,0 +1,62 @@
+package com.example.azbooks;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public  class  MainActivity extends AppCompatActivity {
+
+    private EditText mEditTextValorConta, mEditTextDinheiro, mTextViewValorGorjeta;
+    private TextView mEditViewValorGorjeta, mTextViewTotal,mTextViewTroco;
+
+    @Override
+    protected  void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main);
+        mEditTextValorConta =
+                findViewById(R.id.EditTextValorConta);
+        mEditTextDinheiro =
+                findViewById(R.id.EditTextDinheiro);
+        mEditViewValorGorjeta =
+                findViewById(R.id.EditViewValorGorjeta);
+    }
+
+    public void calcular (View view){
+
+        String valorContaDigitada =
+                mEditTextValorConta.getText().toString();
+        String valorDinheiroDigitado =
+                mEditTextDinheiro.getText().toString();
+
+        if (!(valorContaDigitada.isEmpty()) &&! (valorDinheiroDigitado.isEmpty())){
+
+            float valorConta =
+                    Float.parseFloat(valorContaDigitada);
+
+            float valorDinheiro =
+                    Float.parseFloat(valorDinheiroDigitado);
+
+            // Realiza os calculos
+            float valorGorjeta = valorConta * 15 / 100;
+            float total = valorConta + valorGorjeta;
+            float troco = valorDinheiro - total;
+
+            // Exibe os resultados
+            mTextViewValorGorjeta.setText(String.format("R$ %.2f", valorGorjeta));
+                mTextViewTotal.setText(String.format("R$ %.2f", total));
+            mTextViewTroco.setText(String.format("R$ %.2f", troco));
+        }
+    }
+
+    public void limparDados(View view){
+        // Limpa todos os EditText no layout
+
+    public void proximaTela(view view){
+
+        Intent intent = new Intent(packageContext: this, About.class);
+        startActivity(intent);
+        }
+    }
+}
